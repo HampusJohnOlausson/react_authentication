@@ -8,13 +8,13 @@ import Register from './Pages/Register';
 
 function App() {
 
-   const [name, setName] = useState("");
+   const [name, setName] = useState('');
 
    useEffect(() => {
      (
        async () => {
        const response = await fetch("http://localhost:8000/api/user", {
-         headers: { "Content-Type": "application/json" },
+         headers: {"Content-Type": "application/json"},
          credentials: "include",
        });
 

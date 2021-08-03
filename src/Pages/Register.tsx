@@ -17,8 +17,8 @@ const Register = () => {
       body: JSON.stringify({
         name,
         email,
-        password,
-      }),
+        password
+      })
     });
 
     setRedirect(true);
@@ -26,8 +26,7 @@ const Register = () => {
 
   //redirect to login once user has regsitered
   if(redirect){
-
-  return <Redirect to="/login" />
+    return <Redirect to="/login" />
   }
 
   return (
